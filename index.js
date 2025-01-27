@@ -13,7 +13,9 @@ function date(dob) {
   }
   return age;
 }
-
+app.get('/',(req,res)=>{
+    res.json({message : "Please go to the /signup Route"})
+})
 // Getting the details using GET and accepting the detail via query and showing the details to the user with validation  
 
 app.get("/signup", (req, res) => {
